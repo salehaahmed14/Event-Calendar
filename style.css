@@ -1,0 +1,100 @@
+#days{
+    margin-top: 20px;
+    width:100%;
+    margin-left:50px;
+}
+#day{
+    float:left;
+    width:80px;
+    height:40px;
+    border: 2px solid rgb(0, 0, 0);
+    padding:3px 3px 3px 3px;
+    text-align: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color:rgb(161, 167, 180);
+}
+#num_days{
+    width:100%;
+
+}
+#num_day{
+    float:left;
+    width:80px;
+    height:40px;
+    border: 2px solid black;
+    padding:3px 3px 3px 3px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(109, 173, 205);
+}
+#header{
+    width: 50%;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+#add_event{
+    margin-top: 10px;
+    float:left;
+    align-items: center;
+    margin-left:150px;
+}
+#events{
+    margin-top: 10px;
+    width: 500px;
+    height:100px;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 80px;
+    text-align: left;
+    font-size: 15px;
+    padding: 0px 0px 0px 0px;
+    background-color: rgb(195, 228, 246);
+}
+#calender_days{
+    width: 560px;
+    margin-left:50px;
+}
+.container{
+    width:660px;
+    height:800px;
+    border: 2px solid black;
+    background-color: rgb(166, 214, 240);
+    border-radius: 10px;
+}
+body{
+    width:560px;
+    height:900px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+button{
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border:none;
+    border-radius: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    width:50px;
+    height: 25px;
+}
+button:hover{
+    cursor: pointer;
+}
+table{
+    border: 1px solid black;
+}
+.container {
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#month_change{
+    margin-top:10px;
+}
+#userInput {
+    border: 1px solid black;
+}

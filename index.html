@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onLoad="make_calender()">
+    <div class="container">
+        <div id="buttons">
+            <div id="header"><b>OCTOBER 2023</b></div>
+            <button id="month_change_prev" style="margin-top:10px; margin-left: 10px;margin-left: 10px;" onclick="prev_month();delete_table();make_calender()">PREV</button>
+            <button id="month_change_next" style="margin-top:10px; margin-left: 10px;margin-left: 10px;" onclick="next_month();delete_table();make_calender()">NEXT</button>
+            <button id="change_week_next" style="visibility: hidden;margin-top:10px; margin-left: 10px;"onclick="next_week();switch_view()">&GT;</button>
+            <button id="change_week_prev" style="visibility: hidden;margin-top:10px; margin-left: 10px;"onclick="prev_week();switch_view()">&LT;</button>
+            <button id="views" style="width:130px; margin-top:10px;margin-left:10px" onclick="delete_table();switch_view()">WEEKLY VIEW</button>
+        </div>
+    <div id="days">
+        <div id="day">Mon</div>
+        <div id="day">Tue</div>
+        <div id="day">Wed</div>
+        <div id="day">Thur</div>
+        <div id="day">Fri</div>
+        <div id="day">Sat</div>
+        <div id="day">Sun</div>
+    </div>
+    <table id="calender_days" width="100%" height="500px" border="1" ></table>
+    <div id="add_event">
+        <label for="userInput">Add Event:</label>
+        <input type="text" id="userInput" disabled/>
+        <button id="submit" onclick="add_to_div()">ADD</button>
+    </div>
+    <div id="events" style="overflow:scroll; height:100px"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
